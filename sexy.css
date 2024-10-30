@@ -1,0 +1,64 @@
+body {
+    background-image: url(assets/background.gif);
+    background-attachment: fixed;
+    margin-left: 100;
+    margin-right: 100;
+    font-family: Sans-Serif;
+}
+
+.sexy_header {
+    background-image: url(assets/bling.gif);
+    height:400px;
+}
+
+.smilies {
+    font-size: 1.3em;
+    color: white;
+}
+
+#sexy_photos {
+  /* Prevent vertical gaps */
+  line-height: 0;
+   
+  -moz-column-count:    4;
+  -webkit-column-count: 4;
+  column-count:         4;
+
+  -webkit-column-gap:   0px;
+  -moz-column-gap:      0px;
+  column-gap:           0px;  
+}
+
+div.sexy_popup {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}
+
+@media (max-width: 1200px) {
+  #sexy_photos {
+  -moz-column-count:    3;
+  -webkit-column-count: 3;
+  column-count:         3;
+  }
+}
+@media (max-width: 1000px) {
+  #sexy_photos {
+  -moz-column-count:    2;
+  -webkit-column-count: 2;
+  column-count:         2;
+  }
+}
+@media (max-width: 800px) {
+  #sexy_photos {
+  -moz-column-count:    1;
+  -webkit-column-count: 1;
+  column-count:         1;
+  }
+}
+
+#sexy_photos img {
+  /* Just in case there are inline attributes */
+  width: 100% !important;
+  height: auto !important;
+}
