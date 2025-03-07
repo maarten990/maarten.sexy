@@ -4,6 +4,11 @@ body {
     margin-left: 100;
     margin-right: 100;
     font-family: Sans-Serif;
+    cursor: url('assets/cursor.png') 89 32, auto;
+}
+
+a {
+    cursor: url('assets/cursor.png') 89 32, auto;
 }
 
 .sexy_header {
